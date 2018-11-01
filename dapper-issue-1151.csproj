@@ -6,4 +6,10 @@
     <RootNamespace>dapper_issue_1151</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="MySQL.Data" Version="8.0.13" />
+    <PackageReference Include="NewtonSoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
 </Project>

@@ -47,7 +47,7 @@ namespace dapper_issue_1151
                 +---------+---------------------+------------+
                  */
 
-                 //first "simple" way
+                 //first "simple" way, generates "duplicate" orders
                 var result1 = conn.Query<Order, Detail, Order>(sql, (order, detail) => { order.Details.Add(detail.Product); return order; }, splitOn: "Product");
                 Dump(result1);
                 /*
